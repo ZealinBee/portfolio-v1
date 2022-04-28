@@ -22,6 +22,13 @@ window.addEventListener('scroll', function() {
         navImg.classList.remove('nav-hidden')
         navImg.classList.remove('nav-mobile-hidden')
     }
-
+    if (window.scrollY > 632) {
+        nav.classList.add('nav-background')
+    }else if(window.scrollY < 632) {
+        nav.classList.remove('nav-background')
+    }
+    
+    
     lastScrollY = window.scrollY
 })
+

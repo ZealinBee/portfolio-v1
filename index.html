@@ -15,16 +15,16 @@
     <link rel="stylesheet" href="responsive.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body id="home">
     <div class="hamburger">
       <div class="hamburger-span"></div>
     </div>
-      <div class="nav-img" id="home">
+      <div class="nav-img" >
         <a href="#">
           <img src="assets/profile.png" alt="" />
         </a>
       </div>
-      <nav class="nav">
+      <nav class="nav" >
         <ul>
           <li><a href="#home" class="home">Home</a></li>
           <li><a href="#projects" class="projects">Projects</a></li>
@@ -36,7 +36,7 @@
           </li>
         </ul>
       </nav>
-    <main>
+    <main >
       <h4 class="hey">Hey👋, I'm</h4>
       <h1 class="name">Zhiyuan <span class="name-span">Liu</span></h1>
       <h1 class="occupation">
@@ -71,11 +71,11 @@
           <p class="project-description">
             Chinese learning website designed for absolute beginners
           </p>
-          <a href="#" class="project-live live-1" target="_blank">
+          <a href="https://zealinbee.github.io/chinesesimplified/" class="project-live live-1" target="_blank">
             <i class="fa-solid fa-link-simple"></i>
             LIVE WEBSITE
           </a>
-          <a href="#" class="project-code code-1" target="_blank">
+          <a href="https://github.com/ZealinBee/chinesesimplified" class="project-code code-1" target="_blank">
             <i class="fa-solid fa-code"></i> PROJECT CODE
           </a>
         </div>
@@ -86,11 +86,11 @@
           <p class="project-description">
             Mechanical keyboard sound simulator with visuals
           </p>
-          <a href="#" class="project-live" target="_blank">
+          <a href="https://zealinbee.github.io/Mechy-Kechy/" class="project-live" target="_blank">
             <i class="fa-solid fa-link-simple"></i>
             LIVE WEBSITE
           </a>
-          <a href="#" class="project-code" target="_blank">
+          <a href="https://github.com/ZealinBee/Mechy-Kechy" class="project-code" target="_blank">
             <i class="fa-solid fa-code"></i> PROJECT CODE
           </a>
         </div>
@@ -105,7 +105,7 @@
             <i class="fa-solid fa-link-simple"></i>
             LIVE WEBSITE
           </a>
-          <a href="#" class="project-code" target="_blank">
+          <a href="#projects" class="project-code" >
             PRIVATE PROJECT
           </a>
         </div>
@@ -157,5 +157,16 @@
       </div>
       <h3>Built by Zhiyuan Liu</h3>
     </footer>
+    <div class="background--custom">
+      <canvas id="canvas" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+    <script>
+    var gradient = new Gradient();
+    gradient.initGradient("#canvas");
+    </script>
+   
   </body>
+
+ 
 </html>
