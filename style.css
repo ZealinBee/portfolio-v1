@@ -297,14 +297,14 @@ main {
 }
 
 .project-1 a{
-  color:rgb(127,139,88);
-  border:2px rgb(127,139,88) solid;
+  color:rgb(223, 168, 49);
+  border:2px rgb(223, 168, 49) solid;
   transition: all 0.25s ease-in-out;
 }
 
 .project-1 a:hover,
 .project-1 a:hover{
-  background:rgba(127,139,88,0.4);
+  background:rgb(223, 168, 49, 0.4);
 }
 
 .scroll-down-text{
@@ -325,8 +325,8 @@ main {
 }
 
 .project-1{
-  border:3px rgb(127,139,88) solid;
-  background-image: url('assets/chinesesimplified.png.jpg');
+  border:3px rgb(223, 168, 49) solid;
+  background-image: url('assets/monthlyallowance.png');
  
 }
 
