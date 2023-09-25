@@ -359,17 +359,17 @@ main {
 }
 
 .project-4{
-  background-image:url('assets/deltadownfall.jpg');
-  border:2px solid rgb(190,35,65);
+  background-image:url('assets/full-stack.png');
+  border:2px solid rgb(165, 125, 23);
 }
 
 .project-4 a{
-  color:rgb(190,35,65);
-  border: 2px rgb(190,35,65) solid;
+  color:rgb(165, 125, 23);
+  border: 2px rgb(165, 125, 23) solid;
 }
 
 .project-4 a:hover{
-  background:rgba(190,35,65, 0.4)
+  background:rgba(165, 125, 23, 0.44);
 }
 
 .contact{
