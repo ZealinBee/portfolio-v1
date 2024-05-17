@@ -171,5 +171,28 @@
     display: none;
   }
 
-  
+  .stack {
+    width:75%;
+  }
+
+  .stack h2 {
+    font-size: 2.5rem;
+    margin-bottom:2rem;
+  }
+
+
+  .stack-grid {
+    padding-left:3rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    font-size:4rem;
+  }
+
+  .stack-grid > * {
+    margin-bottom:1.5rem;
+  }
+
+
+
 }

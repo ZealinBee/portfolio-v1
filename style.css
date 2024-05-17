@@ -322,7 +322,7 @@ main {
 
 .project-1 {
   border: 3px rgb(223, 168, 49) solid;
-  background-image: url("assets/monthlyallowance.png");
+  background-image: url("assets/kanban.png");
 }
 
 .project-2 {
@@ -475,4 +475,25 @@ canvas#canvas {
   --gradient-color-3: #1a191d;
   --gradient-color-4: #33303a;
   --gradient-speed: 0.000004;
+}
+
+
+.stack {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.stack h2 {
+  color:var(--primary-white);
+  font-family: "poppins";
+  font-size:2rem;
+  text-align: center;
+  margin-bottom:1rem;
+}
+
+.stack-grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  color:var(--primary-white);
+  font-size:3rem;
+  gap:1.5rem;
 }
