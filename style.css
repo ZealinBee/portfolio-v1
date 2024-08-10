@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -30,6 +30,7 @@ html {
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "poppins";
   padding: 0;
 }
 
@@ -71,7 +72,6 @@ nav li {
 nav a {
   text-decoration: none;
   color: var(--primary-white);
-  font-family: "poppins";
   font-size: 1.4rem;
 }
 
@@ -171,11 +171,9 @@ nav a:hover {
 
 main {
   color: var(--primary-white);
-
   width: 90%;
   display: flex;
   flex-direction: column;
-  font-family: "poppins";
   margin-top: 15vh;
   padding-left: 20px;
   min-height: 100vh;
@@ -238,74 +236,8 @@ main {
   color: #888888;
 }
 
-.project {
-  width: 90%;
-  margin: 0 auto;
-  border-radius: 0.3rem;
-  font-family: "poppins";
-  margin-bottom: 2rem;
-  background-size: 600px;
-  background-position: center;
-}
-
-.project-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 100%;
-}
-
-.project-name {
-  color: var(--primary-white);
-  padding-left: 1rem;
-  margin-top: 1.5rem;
-}
-
-.project-description {
-  width: 80%;
-  text-align: center;
-  font-size: 1.2rem;
-  color: var(--primary-white);
-  margin-bottom: 1rem;
-}
-
-.project-live,
-.project-code {
-  text-decoration: none;
-  font-size: 1.1rem;
-  border-radius: 0.3rem;
-  padding: 0.2rem 0;
-  width: 12rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0.7rem;
-}
-
-.project-live i,
-.project-code i {
-  margin-right: 0.4rem;
-}
-
-.project-code {
-  margin-bottom: 1.5rem;
-}
-
-.project-1 a {
-  color: rgb(223, 168, 49);
-  border: 2px rgb(223, 168, 49) solid;
-  transition: all 0.25s ease-in-out;
-}
-
-.project-1 a:hover,
-.project-1 a:hover {
-  background: rgb(223, 168, 49, 0.4);
-}
-
 .scroll-down-text {
   color: var(--primary-white);
-  font-family: "poppins";
   position: absolute;
   bottom: 5rem;
   left: 50%;
@@ -320,54 +252,7 @@ main {
   content: "→";
 }
 
-.project-1 {
-  border: 3px rgb(223, 168, 49) solid;
-  background-image: url("assets/kanban.png");
-}
-
-.project-2 {
-  background-image: url("assets/artist.png");
-  border: 2px solid #673147;
-}
-
-.project-2 a {
-  color: white;
-  border: 2px white solid;
-}
-.project-2 a:hover {
-  background: rgb(103, 49, 71, 0.4);
-}
-
-.project-3 {
-  background-image: url("assets/reactstore.png");
-  border: 2px solid #c9e2d9;
-}
-
-.project-3 a {
-  color: #c9e2d9;
-  border: 2px #c9e2d9 solid;
-}
-
-.project-3 a:hover {
-  background: #c9e2d940;
-}
-
-.project-4 {
-  background-image: url("assets/full-stack.png");
-  border: 2px solid rgb(165, 125, 23);
-}
-
-.project-4 a {
-  color: rgb(165, 125, 23);
-  border: 2px rgb(165, 125, 23) solid;
-}
-
-.project-4 a:hover {
-  background: rgba(165, 125, 23, 0.44);
-}
-
 .contact {
-  font-family: "poppins";
   color: white;
   display: flex;
   flex-direction: column;
@@ -380,7 +265,7 @@ main {
 }
 
 .contact h1 {
-  color: var(--secondary-color);
+  color: var(--primary-white);
   font-size: 1.8rem;
 }
 
@@ -390,7 +275,6 @@ textarea {
   width: 80%;
   border: 2px var(--secondary-color) solid;
   padding: 0.7rem 1.2rem;
-  font-family: "poppins";
   background: transparent;
   color: white;
   border-radius: 3px;
@@ -412,7 +296,6 @@ textarea::placeholder {
   color: var(--secondary-color);
   background: transparent;
   font-size: 1.1rem;
-  font-family: "poppins";
   cursor: pointer;
 }
 
@@ -428,7 +311,6 @@ footer {
 }
 
 footer h3 {
-  font-family: "poppins";
   width: 100%;
   display: flex;
   justify-content: center;
@@ -477,23 +359,101 @@ canvas#canvas {
   --gradient-speed: 0.000004;
 }
 
-
 .stack {
   width: 90%;
   margin: 0 auto;
 }
 
 .stack h2 {
-  color:var(--primary-white);
-  font-family: "poppins";
-  font-size:2rem;
+  color: var(--primary-white);
+  font-size: 2rem;
   text-align: center;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 .stack-grid {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  color:var(--primary-white);
-  font-size:3rem;
-  gap:1.5rem;
+  color: var(--primary-white);
+  font-size: 3rem;
+  gap: 1.5rem;
+}
+
+.projects {
+  color: var(--primary-white);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.projects h2 {
+  color: var(--primary-white);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project {
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.projects-embed {
+  width: 100%;
+  min-height: 195px;
+}
+
+.projects-embed iframe {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  min-height: 195px;
+}
+
+.projects-description {
+  padding-bottom: 2rem;
+}
+
+.projects-description h3 {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+.projects-description h4 {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.projects-description ul {
+  font-size: 0.9rem;
+  margin-left: 2.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-description ul li {
+  margin-right: 2rem;
+}
+
+.projects-description a {
+  font-size: 0.9rem;
+  color: var(--primary-white);
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+  width: calc(100% - 2rem);
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.projects-description .project-github {
+  background-color: var(--primary-white);
+  color: var(--secondary-color);
+  margin-top: 1rem;
 }

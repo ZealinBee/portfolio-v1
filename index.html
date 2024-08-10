@@ -13,7 +13,11 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
 
     <script src="script.js" defer></script>
   </head>
@@ -29,11 +33,11 @@
     <nav class="nav">
       <ul>
         <li><a href="#home" class="home">Home</a></li>
-        <li><a href="#projects" class="projects">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#stack">Stack</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-          <a target="_blank" href="assets/resume.pdf" class="resume">Resume</a>
+          <a target="_blank" href="assets/resume.pdf" class="resume">My CV</a>
         </li>
       </ul>
     </nav>
@@ -41,14 +45,14 @@
       <h4 class="hey">Hey👋, I'm</h4>
       <h1 class="name">Zhiyuan <span class="name-span">Liu</span></h1>
       <h1 class="occupation">
-        I specialize in <span class="name-span">Full-stack Development</span>
+        I specialize in <span class="name-span">Full-Stack Development</span>
       </h1>
       <h4 class="description">
-        I'm a full-stack developer who is eager to learn. I'm based in Tampere,
-        Finland. I do Cloud too btw.
+        I'm a full-stack developer who is eager to always learn and improve. I'm
+        based in Tampere, Finland.
       </h4>
       <a href="assets/resume.pdf" target="_blank" class="resume-main"
-        >My Resume</a
+        >My CV (PDF)</a
       >
     </main>
     <div class="socials">
@@ -67,98 +71,124 @@
     </div>
 
     <div class="scroll-down-text">scroll down</div>
-    <section class="my-projects" id="projects">
-      <div class="project project-4">
-        <div class="project-text">
-          <h2 class="project-name">Full Stack City Library</h2>
-          <p class="project-description">
+
+    <section class="projects" id="projects">
+      <h2>My Projects</h2>
+      <div class="project project-1">
+        <div class="projects-embed">
+          <iframe
+            src="https://www.youtube.com/embed/QCcJy3s65Eg?si=FlJMmFtBEBg6TY7Y"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="projects-description">
+          <h3>Full Stack City Library</h3>
+          <h4>
             A full-stack library allowing users to loan books and librarians to
-            manage them
-          </p>
+            manage books. With advanced auth and notification features. Made this to dive deep into the .NET eco-system, deployed with CI/CD in azure.
+          </h4>
+          <ul>
+            <li>React</li>
+            <li>Redux Toolkit</li>
+            <li>.NET</li>
+            <li>PostgreSQL</li>
+            <li>Azure</li>
+            <li>CI/CD with Github Actions</li>
+          </ul>
           <a
             href="https://integrify-library.netlify.app/"
             class="project-live"
             target="_blank"
+            >Live Website</a
           >
-            <i class="fa-solid fa-link-simple"></i>
-            LIVE WEBSITE
-          </a>
           <a
-            href="https://github.com/ZealinBee/fullstack-library"
-            class="project-code"
+            href="https://github.com/ZealinBee/fullstack-library/"
+            class="project-github"
             target="_blank"
+            >Github Link</a
           >
-            <i class="fa-solid fa-code"></i> PROJECT CODE
-          </a>
         </div>
       </div>
-      <div class="project project-3">
-        <div class="project-text">
-          <h2 class="project-name">Frontend E-Commerce</h2>
-          <p class="project-description">
-            A frontend e-commerce website built with React and Redux Toolkit
-          </p>
+      <div class="divider"></div>
+
+      <!-- <div class="project project-2">
+        <div class="projects-embed">
+          <iframe
+            src="https://www.youtube.com/embed/vVYM2QBk-iQ?si=Oq3yh5wmLByjg4hs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="projects-description">
+          <h3>Frontend E-Commerce</h3>
+          <h4>
+            A frontend E-commerce using an external API with UI designed by me. The
+            functionalities includes user and admin auth, cart and product/user
+            viewing/sorting and management. Used this project to further my knowledge in Redux Toolkit.
+          </h4>
+          <ul>
+            <li>React</li>
+            <li>Redux Toolkit</li>
+            <li>Typescript</li>
+            <li>SCSS/Material UI</li>
+          </ul>
           <a
             href="https://zhiyuan-shop.netlify.app/"
             class="project-live"
             target="_blank"
+            >Live Website</a
           >
-            <i class="fa-solid fa-link-simple"></i>
-            LIVE WEBSITE
-          </a>
           <a
             href="https://github.com/ZealinBee/e-commerce-frontend"
-            class="project-code"
+            class="project-github"
             target="_blank"
+            >Github Link</a
           >
-            <i class="fa-solid fa-code"></i>PROJECT CODE
-          </a>
         </div>
+
       </div>
-      <div class="project project-2">
-        <div class="project-text">
-          <h2 class="project-name">Artist Portfolio</h2>
-          <p class="project-description">
-            An artist portfolio to showcase my friend's art and my CSS
-          </p>
-          <a
-            href="https://downfall.netlify.app/"
-            class="project-live"
-            target="_blank"
-          >
-            <i class="fa-solid fa-link-simple"></i>
-            LIVE WEBSITE
-          </a>
-          <a
-            href="https://github.com/ZealinBee/artist-portfolio"
-            class="project-code"
-            target="_blank"
-          >
-            <i class="fa-solid fa-code"></i> PROJECT CODE
-          </a>
+      <div class="divider"></div> -->
+      <div class="project project-3">
+        <div class="projects-embed">
+          <iframe
+            src="https://www.youtube.com/embed/9LCTQOp483o?si=z36GcsE2ldI6kEom"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
-      </div>
-      <div class="project project-1">
-        <div class="project-text">
-          <h2 class="project-name project-1-name">Kanban Board API</h2>
-          <p class="project-description">
-            A Kanban board API built with .NET Core and Entity Framework
-          </p>
+        <div class="projects-description">
+          <h3>Kanban Board API</h3>
+          <h4>
+            A Kanban board API with advanced features like board
+            management and team collaboration, documented with Gitbook, used this project to further my knowledge in .NET and practice documenting my APIs. Inspired by Trello's Kanban board.
+          </h4>
+          <ul>
+            <li>.NET</li>
+            <li>Entity Framework Core</li>
+            <li>Gitbook</li>
+          </ul>
           <a
             href="https://zhiyuans-organization-1.gitbook.io/kanban-api/"
-            class="project-live live-1"
+            class="project-live"
             target="_blank"
+            >Documentation Link</a
           >
-            <i class="fa-solid fa-link-simple"></i>
-            DOCUMENTATION
-          </a>
           <a
             href="https://github.com/ZealinBee/Kanban-API"
-            class="project-code code-1"
+            class="project-github"
             target="_blank"
+            >Github Link</a
           >
-            <i class="fa-solid fa-code"></i> PROJECT CODE
-          </a>
         </div>
       </div>
     </section>
@@ -178,7 +208,6 @@
         <i class="devicon-azure-plain colored"></i>
         <i class="devicon-postgresql-plain colored"></i>
         <i class="devicon-git-plain colored"></i>
-
       </div>
     </section>
 
